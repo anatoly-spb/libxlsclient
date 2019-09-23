@@ -1,7 +1,3 @@
 project(xlstest)
-if(TARGET xls) 
-	message("XLS EXISTS")
-else()
-	message("XLS DOES EXISTS")
-endif()
 add_executable(xlstest test.c)
+target_link_libraries(xlstest xls)
