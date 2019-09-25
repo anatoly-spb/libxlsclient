@@ -14,6 +14,7 @@ ExternalProject_Add(external-xls
   LOG_BUILD ON
   LOG_TEST ON
   LOG_INSTALL ON
+  BUILD_BYPRODUCTS <INSTALL_DIR>/lib/${CMAKE_STATIC_LIBRARY_PREFIX}xls${CMAKE_STATIC_LIBRARY_SUFFIX}
 )
 ExternalProject_Get_Property(external-xls INSTALL_DIR)
 add_library(xls STATIC IMPORTED GLOBAL)
